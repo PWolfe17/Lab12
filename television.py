@@ -16,7 +16,6 @@ class Television:
     def power(self):
         """
         Function to turn the "tv" on and off
-        :return: Changing status True or False
         """
         if not self.__status:
             self.__status = True
@@ -26,7 +25,6 @@ class Television:
     def mute(self):
         """
         Function to "Mute" the tv
-        :return: Changing the mute status to True or False
         """
         if self.__status:
             if not self.__muted:
@@ -37,7 +35,6 @@ class Television:
     def channel_down(self):
         """
         Function to lower the "Channel" by 1
-        :return: Changing the current channel variable by -1
         """
         if self.__status:
             self.__channel -= 1
@@ -47,7 +44,6 @@ class Television:
     def channel_up(self):
         """
         Function to raise the "Channel" by 1
-        :return: Changing the current channel variable by +1
         """
         if self.__status:
             self.__channel += 1
@@ -57,7 +53,6 @@ class Television:
     def volume_down(self):
         """
         Function to decrease the volume variable by 1
-        :return: Changing the volume by -1
         """
         if self.__status:
             self.__muted = False
@@ -69,7 +64,6 @@ class Television:
     def volume_up(self):
         """
         Function to increase the volume variable by 1
-        :return: Changing the volume by +1
         """
         if self.__status:
             self.__muted = False
