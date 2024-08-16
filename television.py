@@ -73,7 +73,7 @@ class Television:
     def __str__(self) -> str:
         """
         If print(class) is called this string with be printed
-        :return: A string of what the current values of Power, Channel, and Volume are
+        :return: A string of what the current values of Power Channel and Volume are
         """
         if self.__muted:
             return f'Power = {self.__status}, Channel = {self.__channel}, Volume = {Television.MIN_VOLUME}'
